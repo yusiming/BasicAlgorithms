@@ -1,5 +1,7 @@
 package yu.sort;
 
+import java.util.Arrays;
+
 /**
  * 冒泡排序
  *
@@ -26,5 +28,24 @@ public class BubbleSort {
                 }
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int testTime = 500000;
+        int size = 10;
+        int value = 100;
+        boolean isSuccess = true;
+        for (int i = 0; i < testTime; i++) {
+            int[] arr1 = Support.generateRandomArray(size, value);
+            int[] arr2 = Support.copyArray(arr1);
+            int[] arr3 = Support.copyArray(arr1);
+            Arrays.sort(arr2);
+            bubbleSort(arr3);
+            if (!Support.isEquals(arr2, arr3)) {
+                isSuccess = false;
+                break;
+            }
+        }
+        System.out.println(isSuccess ? "success!" : "failed!");
     }
 }
