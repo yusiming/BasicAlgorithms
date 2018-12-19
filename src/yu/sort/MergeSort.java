@@ -71,6 +71,7 @@ public class MergeSort {
         int size = 100;
         int maxValue = 100;
         boolean isSuccess = true;
+        long startTime = System.nanoTime();
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = Support.generateRandomArray(size, maxValue);
             int[] arr2 = Support.copyArray(arr1);
@@ -83,6 +84,8 @@ public class MergeSort {
             }
         }
         System.out.println(isSuccess ? "success" : "failed");
+        long endTime = System.nanoTime();
+        System.out.println((endTime - startTime) / 1000000000.0);
     }
 }
 

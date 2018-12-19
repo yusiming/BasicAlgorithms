@@ -19,12 +19,13 @@ public class QuickSort {
     }
 
     private static void quickSort(int[] arr, int L, int R) {
-        if (L < R) {
-            int[] p = partition(arr, L, R);
-            // 经过partition之后，p[0] 到 p[1] 位置上的元素已经排好序了
-            quickSort(arr, L, p[0] - 1);
-            quickSort(arr, p[1] + 1, R);
+        if (L >= R) {
+            return;
         }
+        int[] p = partition(arr, L, R);
+        // 经过partition之后，p[0] 到 p[1] 位置上的元素已经排好序了
+        quickSort(arr, L, p[0] - 1);
+        quickSort(arr, p[1] + 1, R);
     }
 
     /**
@@ -59,6 +60,7 @@ public class QuickSort {
         int size = 100;
         int maxValue = 100;
         boolean isSuccess = true;
+        long startTime = System.nanoTime();
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = Support.generateRandomArray(size, maxValue);
             int[] arr2 = Support.copyArray(arr1);
@@ -74,6 +76,8 @@ public class QuickSort {
             }
         }
         System.out.println(isSuccess ? "success!" : "failed!");
+        long endTime = System.nanoTime();
+        System.out.println((endTime - startTime) / 1000000000.0);
     }
 }
 

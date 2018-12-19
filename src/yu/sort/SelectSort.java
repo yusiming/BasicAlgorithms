@@ -33,9 +33,10 @@ public class SelectSort {
     }
     public static void main(String[] args) {
         int testTime = 500000;
-        int size = 10;
+        int size = 100;
         int value = 100;
         boolean isSuccess = true;
+        long  startTime = System.nanoTime();
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = Support.generateRandomArray(size, value);
             int[] arr2 = Support.copyArray(arr1);
@@ -48,6 +49,8 @@ public class SelectSort {
             }
         }
         System.out.println(isSuccess ? "success!" : "failed!");
+        long endTime = System.nanoTime();
+        System.out.println((endTime - startTime) / 1000000000.0);
     }
 
 }
