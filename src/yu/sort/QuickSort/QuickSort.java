@@ -22,6 +22,8 @@ public class QuickSort {
         if (L >= R) {
             return;
         }
+        // 引入随机性
+        Support.swap(arr, ((int) (Math.random() * (R - L + 1) + L)), R);
         int[] p = partition(arr, L, R);
         // 经过partition之后，p[0] 到 p[1] 位置上的元素已经排好序了
         quickSort(arr, L, p[0] - 1);
