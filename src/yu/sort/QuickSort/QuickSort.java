@@ -44,7 +44,8 @@ public class QuickSort {
                 // 交换了一个等于num的数来到L位置，或者等于区域不存在，自己跟自己交换
                 Support.swap(arr, ++less, L++);
             } else if (arr[L] > num) {
-                // 这里不应该 ++L，因为从--more位置交换过来的元素的值，是不确定的，这里会改变arr[R]上元素的值，所以不能使用arr[R]
+                // 这里不应该 ++L，因为从--more位置交换过来的元素的值，是不确定的，
+                // 这里会改变arr[R]上元素的值，所以不能使用arr[R]
                 Support.swap(arr, L, --more);
             } else {
                 L++;
