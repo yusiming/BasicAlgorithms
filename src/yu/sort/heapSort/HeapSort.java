@@ -47,10 +47,10 @@ public class HeapSort {
      * 元素的上浮操作
      */
     private static void heapify(int[] arr, int index, int heapSize) {
-        while (2 * index + 1 < heapSize) {
+        while (2 * index + 1 <= heapSize - 1) {
             int k = 2 * index + 1;
             //  如果k < heapSize - 1，证明还有右子节点
-            if (k + 1 < heapSize && arr[k] < arr[k + 1]) {
+            if (k < heapSize - 1 && arr[k] < arr[k + 1]) {
                 k++;
             }
             // 如果父节点不小于子节点，证明堆已经有序了，直接break
