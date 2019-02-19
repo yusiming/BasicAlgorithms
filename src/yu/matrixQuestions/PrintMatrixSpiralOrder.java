@@ -13,12 +13,12 @@ public class PrintMatrixSpiralOrder {
      * @param matrix
      */
     public static void spiralOrderPrint(int[][] matrix) {
-        int a = 0;
-        int b = 0;
-        int c = matrix.length - 1;
-        int d = matrix[0].length - 1;
-        while (a <= c && b <= d) {
-            printEdge(matrix, a++, b++, c--, d--);
+        int aR = 0;
+        int aC = 0;
+        int bR = matrix.length - 1;
+        int bC = matrix[0].length - 1;
+        while (aR <= bR && aC <= bC) {
+            printEdge(matrix, aR++, aC++, bR--, bC--);
         }
     }
 
