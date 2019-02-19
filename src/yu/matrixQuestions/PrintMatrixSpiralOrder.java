@@ -10,7 +10,7 @@ public class PrintMatrixSpiralOrder {
     /**
      * 旋转打印矩阵matrix中的元素
      *
-     * @param matrix 矩阵
+     * @param matrix
      */
     public static void spiralOrderPrint(int[][] matrix) {
         int a = 0;
@@ -23,43 +23,43 @@ public class PrintMatrixSpiralOrder {
     }
 
     /**
-     * 打印以(a,b)为左上角,(c,d)为右下角的矩阵的四条边
+     * 打印以点a为左上角,点b为右下角的矩阵的四条边
      *
      * @param m 矩阵m
-     * @param a 左上角的横坐标
-     * @param b 左上角的纵坐标
-     * @param c 右上角的横坐标
-     * @param d 右上角的纵坐标
+     * @param aR 点a所在的行
+     * @param aC 点a所在的列
+     * @param bR 点b所在的行
+     * @param bC 点b所在的列
      */
-    private static void printEdge(int[][] m, int a, int b, int c, int d) {
-        // 如果两个顶点的横坐标相等
-        if (a == c) {
-            for (int i = b; i <= d; i++) {
-                System.out.print(m[a][i] + " ");
+    private static void printEdge(int[][] m, int aR, int aC, int bR, int bC) {
+        // 如果两个顶点在同一行
+        if (aR == bR) {
+            for (int i = aC; i <= bC; i++) {
+                System.out.print(m[aR][i] + " ");
             }
-            //如果两个顶点的纵坐标相等
-        } else if (b == d) {
-            for (int i = a; i <= c; i++) {
-                System.out.print(m[i][b] + " ");
+            // 如果两个顶点在同一列
+        } else if (aC == bC) {
+            for (int i = aR; i <= bR; i++) {
+                System.out.print(m[i][aC] + " ");
             }
         } else {
-            int curX = a;
-            int curY = b;
-            while (curY != d) {
-                System.out.print(m[a][curY] + " ");
-                curY++;
+            int curR = aR;
+            int curC = aC;
+            while (curC != bC) {
+                System.out.print(m[aR][curC] + " ");
+                curC++;
             }
-            while (curX != c) {
-                System.out.print(m[curX][d] + " ");
-                curX++;
+            while (curR != bR) {
+                System.out.print(m[curR][bC] + " ");
+                curR++;
             }
-            while (curY != b) {
-                System.out.print(m[c][curY] + " ");
-                curY--;
+            while (curC != aC) {
+                System.out.print(m[bR][curC] + " ");
+                curC--;
             }
-            while (curX != a) {
-                System.out.print(m[curX][b] + " ");
-                curX--;
+            while (curR != aR) {
+                System.out.print(m[curR][aC] + " ");
+                curR--;
             }
         }
     }
