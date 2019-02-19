@@ -9,23 +9,23 @@ package yu.matrixQuestions;
  */
 public class RotateMatrix {
     public static void rotate(int[][] m) {
-        int a = 0;
-        int b = 0;
-        int c = m.length - 1;
-        int d = c;
-        while (a < c) {
-            rotateEdge(m, a++, b++, c--, d--);
+        int aR = 0;
+        int aC = 0;
+        int bR = m.length - 1;
+        int bC = bR;
+        while (aR < bR) {
+            rotateEdge(m, aR++, aC++, bR--, bC--);
         }
     }
 
-    public static void rotateEdge(int[][] m, int a, int b, int c, int d) {
-        int times = c - a;
+    public static void rotateEdge(int[][] m, int aR, int aC, int bR, int bC) {
+        int times = bC - aC;
         for (int i = 0; i < times; i++) {
-            int tmp = m[a][b + i];
-            m[a][b + i] = m[c - i][b];
-            m[c - i][b] = m[c][d - i];
-            m[c][d - i] = m[b + i][d];
-            m[b + i][d] = tmp;
+            int tmp = m[aR][aC + i];
+            m[aR][aC + i] = m[bR - i][aC];
+            m[bR - i][aC] = m[bR][bC - i];
+            m[bR][bC - i] = m[aC + i][bC];
+            m[aC + i][bC] = tmp;
         }
     }
 
