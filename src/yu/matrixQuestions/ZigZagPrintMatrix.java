@@ -23,10 +23,12 @@ public class ZigZagPrintMatrix {
         boolean fromUp = false;
         while (aR != endR + 1) {
             print(m, aR, aC, bR, bC, fromUp);
+            // 注意这里aR的变化要在aC之前
             aR = (aC == endC) ? aR + 1 : aR;
             aC = (aC == endC) ? aC : aC + 1;
-            bR = (bR == endR) ? bR : bR + 1;
+            // 注意这里bC的变化要在bR之前
             bC = (bR == endR) ? bC + 1 : bC;
+            bR = (bR == endR) ? bR : bR + 1;
             fromUp = !fromUp;
         }
     }
@@ -49,7 +51,10 @@ public class ZigZagPrintMatrix {
     }
 
     public static void main(String[] args) {
-        int[][] matrix = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+        int[][] matrix = {
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12}};
         printMatrixZigZag(matrix);
 
     }
