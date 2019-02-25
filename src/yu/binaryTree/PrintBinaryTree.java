@@ -1,5 +1,7 @@
 package yu.binaryTree;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -122,6 +124,30 @@ public class PrintBinaryTree {
         while (!stack2.isEmpty()) {
             System.out.print(stack2.pop() + " ");
         }
+        System.out.println();
+    }
+
+    /**
+     * 二叉树的层序遍历
+     */
+    public static void levelOrder(Node head) {
+        if(head == null) {
+            return;
+        }
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(head);
+        while(!queue.isEmpty()){
+            head = queue.poll();
+            System.out.print(head.value + " ");
+            // 这里为什么要先将左子节点放入队列中？还是为什么保持遍历的正确性
+            if(head.left != null) {
+                queue.add(head.left);
+            }
+            if(head.right != null) {
+                queue.add(head.right);
+            }
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -140,5 +166,6 @@ public class PrintBinaryTree {
         PrintBinaryTree.preOrderUnRecur(head);
         PrintBinaryTree.inOrderUnRecur(head);
         PrintBinaryTree.posOrderUnRecur(head);
+        PrintBinaryTree.levelOrder(head);
     }
 }
