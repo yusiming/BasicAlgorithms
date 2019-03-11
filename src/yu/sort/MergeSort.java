@@ -9,10 +9,16 @@ import java.util.Arrays;
  * @date 2018/12/16 15:15
  */
 public class MergeSort {
+    private MergeSort() {
+    }
+
+    private static int[] help;
+
     public static void mergeSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }
+        help = new int[arr.length];
         sortProcess(arr, 0, arr.length - 1);
     }
 
@@ -45,9 +51,7 @@ public class MergeSort {
      * @param right  右边界
      */
     private static void merge(int[] arr, int left, int middle, int right) {
-        int[] help = new int[right - left + 1];
-        // i = 0,或者 i = left 都可以
-        int i = 0;
+        int i = left;
         int p1 = left;
         int p2 = middle + 1;
         // 将左右两个部分中较小的数依次添加到辅助数组中
@@ -63,7 +67,7 @@ public class MergeSort {
         while (p2 <= right) {
             help[i++] = arr[p2++];
         }
-        System.arraycopy(help, 0, arr, left, right - left + 1);
+        System.arraycopy(help, left, arr, left, right - left + 1);
     }
 
     public static void main(String[] args) {
