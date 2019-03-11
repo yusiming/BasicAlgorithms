@@ -5,8 +5,8 @@ import java.util.Arrays;
 /**
  * 归并排序
  *
- * @Auther yusiming
- * @Date 2018/12/16 15:15
+ * @author yusiming
+ * @date 2018/12/16 15:15
  */
 public class MergeSort {
     public static void mergeSort(int[] arr) {

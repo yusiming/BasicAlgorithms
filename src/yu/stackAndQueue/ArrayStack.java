@@ -3,8 +3,8 @@ package yu.stackAndQueue;
 /**
  * 使用数组实现栈
  *
- * @Auther yusiming
- * @Date 2019/1/28 10:46
+ * @author yusiming
+ * @date 2019/1/28 10:46
  */
 public class ArrayStack {
     private int[] data;

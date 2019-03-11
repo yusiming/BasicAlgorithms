@@ -7,8 +7,8 @@ import java.util.Arrays;
 /**
  * 堆排序
  *
- * @Auther yusiming
- * @Date 2018/12/19 14:02
+ * @author yusiming
+ * @date 2018/12/19 14:02
  */
 public class HeapSort {
     public static void heapSort(int[] arr) {

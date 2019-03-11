@@ -1,8 +1,8 @@
 package yu.sort;
 
 /**
- * @Auther yusiming
- * @Date 2018/12/14 11:44
+ * @author yusiming
+ * @date 2018/12/14 11:44
  */
 public class Support {
     /**

@@ -6,8 +6,8 @@ package yu.matrixQuestions;
  * 要求：
  * 时间复杂度为O(N+M)，额外空间复杂度为O(1)
  *
- * @Auther yusiming
- * @Date 2019/2/20 09:39
+ * @author yusiming
+ * @date 2019/2/20 09:39
  */
 public class FindNumInSortedMatrix {
     public static boolean findNum(int[][] m, int num) {

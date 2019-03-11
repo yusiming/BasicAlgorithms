@@ -13,8 +13,8 @@ import java.util.Arrays;
  * 5左边比5小的数，1、3、4、2；
  * 所以小和为1+1+3+1+1+3+4+2=16
  *
- * @Auther yusiming
- * @Date 2018/12/17 10:35
+ * @author yusiming
+ * @date 2018/12/17 10:35
  */
 public class SmallSum {
     public static int smallSum(int[] arr) {

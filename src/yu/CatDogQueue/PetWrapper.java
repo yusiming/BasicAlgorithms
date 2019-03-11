@@ -3,8 +3,8 @@ package yu.CatDogQueue;
 /**
  * 包装类
  *
- * @Auther yusiming
- * @Date 2019/2/19 11:23
+ * @author yusiming
+ * @date 2019/2/19 11:23
  */
 public class PetWrapper {
     private Pet pet;

@@ -4,8 +4,8 @@ package yu.matrixQuestions;
  * 旋转正方形矩阵：
  * 给定一个整型正方形矩阵matrix，请把该矩阵调整成 顺时针旋转90度的样子
  *
- * @Auther yusiming
- * @Date 2019/2/19 18:56
+ * @author yusiming
+ * @date 2019/2/19 18:56
  */
 public class RotateMatrix {
     public static void rotate(int[][] m) {

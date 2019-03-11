@@ -3,8 +3,8 @@ package yu.linkedList;
 /**
  * 反转单向链表和双向链表
  *
- * @Auther yusiming
- * @Date 2019/2/20 10:32
+ * @author yusiming
+ * @date 2019/2/20 10:32
  */
 public class ReverseList {
     private static class Node {

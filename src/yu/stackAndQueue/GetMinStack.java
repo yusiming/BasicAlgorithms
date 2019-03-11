@@ -6,8 +6,8 @@ import java.util.Stack;
  * 最小元素栈：
  * 实现一个特殊的栈， 在实现栈的基本功能的基础上， 再实现返回栈中最小元素的操作。
  *
- * @Auther yusiming
- * @Date 2019/1/28 12:42
+ * @author yusiming
+ * @date 2019/1/28 12:42
  */
 public class GetMinStack {
     private Stack<Integer> dataStack;

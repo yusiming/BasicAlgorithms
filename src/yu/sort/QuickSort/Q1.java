@@ -8,8 +8,8 @@ import java.util.Arrays;
  * 给定一个数组arr，和一个数num，请把小于等于num的数放在数 组的左边，大于num的数放在数组的右边。
  * 要求额外空间复杂度O(1)，时间复杂度O(N)
  *
- * @Auther yusiming
- * @Date 2018/12/18 09:53
+ * @author yusiming
+ * @date 2018/12/18 09:53
  */
 public class Q1 {
     public static void solve(int[] arr, int num) {

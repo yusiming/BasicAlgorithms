@@ -8,8 +8,8 @@ package yu.matrixQuestions;
  * 9  10  11  12
  * “之”字形打印的结果为：1，2，5，9，6，3，4，7，10，11， 8，12
  *
- * @Auther yusiming
- * @Date 2019/2/19 20:04
+ * @author yusiming
+ * @date 2019/2/19 20:04
  */
 public class ZigZagPrintMatrix {
 

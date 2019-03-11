@@ -3,8 +3,8 @@ package yu.StabilityofSortingAlgorithms;
 import java.util.PriorityQueue;
 
 /**
- * @Auther yusiming
- * @Date 2018/12/21 10:26
+ * @author yusiming
+ * @date 2018/12/21 10:26
  */
 public class Main {
     public static void main(String[] args) {

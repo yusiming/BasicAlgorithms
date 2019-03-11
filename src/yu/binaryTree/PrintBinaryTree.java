@@ -7,8 +7,8 @@ import java.util.Stack;
 /**
  * 二叉树的前、中、后序遍历的递归与非递归实现
  *
- * @Auther yusiming
- * @Date 2019/2/21 11:27
+ * @author yusiming
+ * @date 2019/2/21 11:27
  */
 public class PrintBinaryTree {
     private static class Node {

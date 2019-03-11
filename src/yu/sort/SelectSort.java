@@ -5,8 +5,8 @@ import java.util.Arrays;
 /**
  * 选择排序
  *
- * @Auther yusiming
- * @Date 2018/12/14 13:34
+ * @author yusiming
+ * @date 2018/12/14 13:34
  */
 public class SelectSort {
     /**

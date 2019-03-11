@@ -8,8 +8,8 @@ import java.util.HashMap;
  * delete(key)：将原本在结构中的某个key移除。
  * getRandom()： 等概率随机返回结构中的任何一个key。
  *
- * @Auther yusiming
- * @Date 2019/2/27 14:52
+ * @author yusiming
+ * @date 2019/2/27 14:52
  */
 public class RandomPool<T> {
     private HashMap<T, Integer> h1;

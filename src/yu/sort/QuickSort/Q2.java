@@ -9,8 +9,8 @@ import java.util.Arrays;
  * 给定一个数组arr，和一个数num，
  * 请把小于num的数放在数组的左边，等于num的数放在数组的中间，大于num的数放在数组的右边。
  *
- * @Auther yusiming
- * @Date 2018/12/18 10:14
+ * @author yusiming
+ * @date 2018/12/18 10:14
  */
 public class Q2 {
     /**

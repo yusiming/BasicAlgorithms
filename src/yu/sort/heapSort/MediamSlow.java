@@ -6,8 +6,8 @@ import java.util.Comparator;
 /**
  * 中位数问题的绝对正确的解答
  *
- * @Auther yusiming
- * @Date 2019/1/26 11:42
+ * @author yusiming
+ * @date 2019/1/26 11:42
  */
 public class MediamSlow {
     private static ArrayList<Integer> list = new ArrayList<>();

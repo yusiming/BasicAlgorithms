@@ -3,8 +3,8 @@ package yu.matrixQuestions;
 /**
  * 转圈打印矩阵
  *
- * @Auther yusiming
- * @Date 2019/2/19 14:56
+ * @author yusiming
+ * @date 2019/2/19 14:56
  */
 public class PrintMatrixSpiralOrder {
     /**

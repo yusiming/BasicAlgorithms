@@ -14,8 +14,8 @@ import java.util.Queue;
  * 用户可以调用isDogEmpty方法，检查队列中是否有dog 类的实例；
  * 用户可以调用isCatEmpty方法，检查队列中是否有cat类的实例
  *
- * @Auther yusiming
- * @Date 2019/2/19 11:24
+ * @author yusiming
+ * @date 2019/2/19 11:24
  */
 public class CatDogQueue {
     private Queue<PetWrapper> DogQ;

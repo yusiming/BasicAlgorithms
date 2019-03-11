@@ -1,8 +1,8 @@
 package yu.StabilityofSortingAlgorithms;
 
 /**
- * @Auther yusiming
- * @Date 2018/12/21 10:22
+ * @author yusiming
+ * @date 2018/12/21 10:22
  */
 public class Student {
     private String name;

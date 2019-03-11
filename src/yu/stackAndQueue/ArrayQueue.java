@@ -3,8 +3,8 @@ package yu.stackAndQueue;
 /**
  * 使用数组实现队列
  *
- * @Auther yusiming
- * @Date 2019/1/28 12:01
+ * @author yusiming
+ * @date 2019/1/28 12:01
  */
 public class ArrayQueue {
     private int[] data;

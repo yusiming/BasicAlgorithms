@@ -3,8 +3,8 @@ package yu.linkedList;
 /**
  * 打印两个有序链表的公共部分
  *
- * @Auther yusiming
- * @Date 2019/2/20 10:20
+ * @author yusiming
+ * @date 2019/2/20 10:20
  */
 public class PrintCommonPart {
     private static class Node {

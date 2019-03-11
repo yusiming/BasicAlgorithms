@@ -7,8 +7,8 @@ import java.util.Arrays;
 /**
  * 改进的快速排序（三向切分的快速排序）
  *
- * @Auther yusiming
- * @Date 2018/12/18 10:54
+ * @author yusiming
+ * @date 2018/12/18 10:54
  */
 public class QuickSort {
     public static void quickSort(int[] arr) {

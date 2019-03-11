@@ -5,8 +5,8 @@ import java.util.Arrays;
 /**
  * 非基于比较的计数排序
  *
- * @Auther yusiming
- * @Date 2019/1/27 11:12
+ * @author yusiming
+ * @date 2019/1/27 11:12
  */
 public class CountSort {
     /**

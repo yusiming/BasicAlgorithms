@@ -6,8 +6,8 @@ import java.util.Queue;
 /**
  * 使用两个队列实现栈结构
  *
- * @Auther yusiming
- * @Date 2019/1/28 13:10
+ * @author yusiming
+ * @date 2019/1/28 13:10
  */
 public class TwoQueueStack {
     private Queue<Integer> dataQueue;

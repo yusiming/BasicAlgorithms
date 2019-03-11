@@ -7,8 +7,8 @@ import java.util.Arrays;
 /**
  * 经典的快速排序
  *
- * @Auther yusiming
- * @Date 2018/12/19 10:49
+ * @author yusiming
+ * @date 2018/12/19 10:49
  */
 public class Quick {
     public static void sort(int[] arr) {

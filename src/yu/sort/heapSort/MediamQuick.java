@@ -4,8 +4,8 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * @Auther yusiming
- * @Date 2019/1/26 11:21
+ * @author yusiming
+ * @date 2019/1/26 11:21
  */
 public class MediamQuick {
     private static PriorityQueue<Integer> maxHeap = new PriorityQueue<>(new MaxHeapComparator());

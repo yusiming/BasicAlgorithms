@@ -3,8 +3,8 @@ package yu.hash;
 /**
  * 只修改数组某一位的值，模拟bite数组
  *
- * @Auther yusiming
- * @Date 2019/2/27 15:53
+ * @author yusiming
+ * @date 2019/2/27 15:53
  */
 public class BitArray {
     public static void main(String[] args) {

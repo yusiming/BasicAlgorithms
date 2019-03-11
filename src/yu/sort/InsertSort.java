@@ -5,8 +5,8 @@ import java.util.Arrays;
 /**
  * 插入排序
  *
- * @Auther yusiming
- * @Date 2018/12/14 13:50
+ * @author yusiming
+ * @date 2018/12/14 13:50
  */
 public class InsertSort {
 

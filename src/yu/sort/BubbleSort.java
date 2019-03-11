@@ -5,8 +5,8 @@ import java.util.Arrays;
 /**
  * 冒泡排序
  *
- * @Auther yusiming
- * @Date 2018/12/14 11:48
+ * @author yusiming
+ * @date 2018/12/14 11:48
  */
 public class BubbleSort {
     /**
