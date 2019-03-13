@@ -19,13 +19,18 @@ public class HeapSort {
         for (int i = 0; i < arr.length; i++) {
             heapInsert(arr, i);
         }
-        // heapSize代表堆的大小
-        int heapSize = arr.length;
-        Support.swap(arr, 0, --heapSize);
-        // 每次都将最大元素放到heapSize - 1 的位置
-        while (heapSize > 0) {
-            heapify(arr, 0, heapSize);
-            Support.swap(arr, 0, --heapSize);
+//        // heapSize代表堆的大小
+//        int heapSize = arr.length;
+//        Support.swap(arr, 0, --heapSize);
+//        // 每次都将最大元素放到heapSize - 1 的位置
+//        while (heapSize > 0) {
+//            heapify(arr, 0, heapSize);
+//            Support.swap(arr, 0, --heapSize);
+//        }
+        // 下面的遍历方式也是可以的
+        for(int i = arr.length - 1;i > 0; i--){
+            Support.swap(arr,0,i);
+            heapify(arr,0,i);
         }
     }
 
